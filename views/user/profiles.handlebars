@@ -1,0 +1,27 @@
+    <div class="p-10 mb-2 bg-success sticky-top">
+      
+      <h1 class="text-center text-light ">Profiles</h1>
+      </div>
+      <a href="/" class="text-success btn btn-sm">Create new Profile</a>
+      
+<div class="container-fluid">
+  <div class="container my-4">
+
+{{#each profile}}
+    <div class=" d-flex flex-wrap">
+<div class="card border-success bg-light mb-3 mx-3 col-md-4 p-2 flex-fill " style="width: 18rem;">
+  <div class="card-header text-success">{{name}}</div>
+  <div class="card-body text-success">
+    <p class="card-title text-muted">Mail at: {{email}}</p>
+    <p class="card-text"> Phone: {{phone}}</p>
+    <p class="card-text"> DOB: {{dob}}</p>
+    <p class="card-text">Address:  {{address}}</p>
+    <p class="card-text">City:  {{city}}</p>
+    <p class="card-text">Zip:  {{zip}}</p>
+
+  </div>
+    </div>
+{{/each}}
+
+  </div>
+</div>
